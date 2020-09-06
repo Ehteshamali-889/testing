@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: white;
+      }
+      .box {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #333;
+      }
+      .head {
+        padding: 10px;
+        padding-bottom: 10px;
+      }
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        letter-spacing: 1.75px;
+        padding-bottom: 15px;
+        width: 32%;
+        border-bottom: 5px solid white;
+        color: #ff0038;
+      }
+      .head2 {
+        margin: 20px;
+      }
+      .textbox {
+        width: 100%;
+        overflow: hidden;
+        padding: 8px 0;
+        margin: 8px 0;
+        border-bottom: 1px solid #ff0038;
+      }
+      .textbox input {
+        border: none;
+        outline: none;
+        background: none;
+        color: white;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      ::placeholder {
+        color: #555;
+      }
+      button {
+        margin-top: 10px;
+        color: white;
+        border: 1px solid white;
+        outline: none;
+        background: transparent;
+        padding: 10px 15px;
+      }
+      button:hover {
+        background-color: #ff0038;
+      }
+      p {
+        margin-top: 8px;
+        color: white;
+      }
+      a {
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: #ff0038;
+      }
+      @media (max-width: 370px) {
+        .box {
+          width: 80%;
+          top: 25%;
+          left: 25%;
+          transform: translate(-20%, -20%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="head"><h1>Login</h1></div>
+      <!-- <u id="under1">Ali</u> -->
+      <div class="head2">
+        <div class="textbox">
+          <input type="text" placeholder="Username" value="Username" />
+        </div>
+        <br />
+        <br />
+        <div class="textbox">
+          <input type="text" placeholder="Password" value="Password" />
+        </div>
+        <div class="btn">
+          <button>Submit</button>
+          <p>Have not created account? <a href="#">Sign Up</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
